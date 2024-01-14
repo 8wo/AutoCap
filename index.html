@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCap</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Arial Black", Gadget, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #00bf63;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #00bf63;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 2em;
+        }
+
+        #logo {
+            position: absolute;
+            top: 25px;
+            left: 10%;
+            transform: translateX(-50%);
+            max-width: 200px;
+        }
+
+        .navButton {
+            position: absolute;
+            top: 35px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: "Arial Bold", Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: white;
+            cursor: pointer;
+        }
+
+        #homeButton {
+            right: 50%;
+        }
+
+        #joinButton {
+            right: 36%;
+        }
+
+        #purchaseButton {
+            right: 42%;
+        }
+
+        #aboutUsBox {
+            position: absolute;
+            left: 25%;
+            top: 700%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            width: 350px;
+            height: 250px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        #showcaseBox {
+            position: absolute;
+            left: 65%;
+            top: 700%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            width: 700px;
+            height: 500px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        #vouchesBox {
+            position: absolute;
+            top: 1750%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            width: 1000px;
+            height: 450px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        #vouchesBox h2,
+        #aboutUsBox h2,
+        #showcaseBox h2 {
+            font-weight: 1500;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: white;
+        }
+
+        #vouchesBox,
+        #aboutUsBox p,
+        #showcaseBox p {
+            font-weight: 500;
+        }
+
+        #vouchesImage {
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+            object-position: center top;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.png" alt="Logo">
+        <a id="homeButton" class="navButton" href="#" onclick="window.location.href=window.location.href;">Home</a>
+        <a id="joinButton" class="navButton" href="https://discord.gg/SygdkUGYXA" target="_blank">Join Us Now</a>
+        <a id="purchaseButton" class="navButton" href="https://samsrobloxaccountmarket.mysellix.io/product/656b6bd617269" target="_blank">Purchase Solves</a>
+        <div id="aboutUsBox">
+            <h2>About Us</h2>
+            <p>We are a cheap, user-friendly FunCaptcha solver providing solves for only <span class="highlight">1$ per 1000 solves.</span> Our solving times are usually around <span class="highlight">1 to 4 seconds</span>, and you can expect <span class="highlight">fast customer support.</span> We were established in 2023 and have <span class="highlight">stable uptime</span> along with <span class="highlight">support for practically every website that uses FunCaptcha.</span></p>
+        </div>
+        <div id="showcaseBox">
+            <h2>Showcase</h2>
+            <p>This is a showcase of our amazing features and services. Feel free to explore and see what sets us apart from the rest.</p>
+            <div class="video-container">
+                <iframe src="https://streamable.com/e/pwivc0?quality=highest" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="vouchesBox">
+            <h2>Our Feedback</h2>
+            <p>Here is an image of what our customers have to say about the FunCaptcha solver:</p>
+            <img id="vouchesImage" src="vouches.png" alt="Customer Feedback">
+        </div>
+    </header>
+</body>
+</html>
